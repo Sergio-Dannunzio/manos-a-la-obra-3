@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import 'app/globalVariables.scss';
+
+body{
+    background-color: $negro;
+    font-family: $font-family;
+    color: $blanco;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $blanco50; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $blanco20; 
+}

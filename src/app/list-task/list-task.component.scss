@@ -1,0 +1,45 @@
+@import '../globalVariables.scss';
+@import "../mixins.scss";
+
+.container{
+    border-radius: $border-radius;
+    >ul{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        list-style: none;
+        padding-left: 0px;
+        margin: 0px;
+        >li{
+            display: flex;
+            justify-content: space-between;
+            background-color: $blanco20;
+            width: 512px;
+            height: 64px;
+            padding-left: 8px;
+            margin: 8px;
+            font-size: $font-size;
+            border-radius: $border-radius;
+            >.task-div{
+                display: flex;
+                input {
+                    width: $font-size;
+                    margin-right: 8px;
+                }
+                p{
+                    margin-top: 16px;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+        button{
+            @include icon-button;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-right: 8px;
+        }
+    }
+}
+.crossOut{
+    text-decoration: line-through;
+}

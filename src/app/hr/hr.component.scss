@@ -1,0 +1,14 @@
+@import "../globalVariables.scss";
+div{
+    display: flex;
+    justify-content: space-around;
+    height: 16px;
+    >hr{
+        margin-top: 8px;
+        margin-bottom: 16px;
+        height: 2px;
+        border-width:0;
+        background-color: $blanco10;
+        width: 512px;
+    }
+}
