@@ -1,6 +1,7 @@
 $border-radius : 4px;
 $font-size: 24px;
 $font-family: 'Roboto', sans-serif;
+/*
 $negro : rgba(34,34,34,1);
 $negro50 : rgba(34,34,34,0.5);
 $negro10 : rgba(34,34,34,0.1);
@@ -8,3 +9,21 @@ $blanco :rgba(255,255,255,1);
 $blanco50 : rgba(255,255,255,0.5);
 $blanco20 :rgba(255,255,255,0.2);
 $blanco10 :rgba(255,255,255,0.1);
+*/
+body{
+    --text-color:rgba(34,34,34,1);
+    --backg-color:rgba(255,255,255,1);
+    --btn-color:rgba(34,34,34,0.1);
+    --scroll-bar-hover: rgba(34,34,34,0.5);
+    --list-backg-color:rgba(34,34,34,0.1);
+    --div-backg-color:rgba(34,34,34,0.1);
+}
+
+body.dark-theme {
+    --text-color:rgba(255,255,255,1);
+    --backg-color:rgba(34,34,34,1);
+    --btn-color:rgba(255,255,255,0.5);
+    --scroll-bar-hover: rgba(255,255,255,0.2);
+    --list-backg-color:rgba(255,255,255,0.2);
+    --div-backg-color:rgba(255,255,255,0.1);
+}

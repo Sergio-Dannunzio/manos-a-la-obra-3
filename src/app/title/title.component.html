@@ -1,1 +1,7 @@
-<h1>Lista de tareas de Sergio</h1>
+<div>
+    <h1>Lista de tareas de Sergio</h1>
+    <button (click)="toggleDarkTheme()" *ngIf="getClass(); else moon"><i class='far fa-moon'></i></button>
+    <ng-template #moon>
+        <button (click)="toggleDarkTheme()"><i class='fas fa-sun'></i></button>
+    </ng-template>
+</div>

@@ -16,18 +16,18 @@ section{
         align-items: center;
         justify-content: center;
         border-radius: $border-radius;
-        width: 512px;
+        width: 80%;
         height: 64px;
-        background-color: $blanco10;
+        background-color: var(--div-backg-color);
     }
     input{
-        width: 440px;
+        width: 100%;
         font-size: 24px;
         height: 48px;
         border-radius: $border-radius;
         border: none;
         background-color: transparent;
-        color: $blanco;
+        color: var(--text-color);
         margin: 8px;
     }
     button{
@@ -38,3 +38,10 @@ section{
     }
 }
 
+@media only screen and (min-width: 600px) {
+    section{
+        div{
+            width: 512px;
+        }
+    }
+}

@@ -1,8 +1,27 @@
 @import "../globalVariables.scss";
-h1{
+@import "../mixins.scss";
+div{
     display: flex;
     justify-content: center;
-    font-family: $font-family;
-    font-size: 36px;
+    align-items: center;
+    margin-left: 26px;
+    margin-right: 26px;
+    width: auto;
+    h1{
+        display: flex;
+        justify-content: center;
+        font-family: $font-family;
+        font-size: 36px;
+    }   
+    button{
+        margin-left: 56px;
+        @include icon-button;
+    }
 }
 
+@media only screen and (min-width: 600px) {
+
+    div{
+        width: auto;
+    }
+}

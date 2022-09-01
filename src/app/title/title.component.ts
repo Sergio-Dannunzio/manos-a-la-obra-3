@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-title',
@@ -12,4 +12,16 @@ export class TitleComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  a = true;
+
+  getClass(){
+      if(document.body.className == 'dark-theme') {
+        return false;
+      }else
+      return true;
+  }
+
+  toggleDarkTheme(): void {
+    document.body.classList.toggle('dark-theme');
+ }
 }
